@@ -1,0 +1,1 @@
+# Some rules for Karabiner-Elements
