@@ -1,0 +1,142 @@
+{
+  "title": "Swap Option and Command only for a matched device",
+  "rules": [
+    {
+      "description": "Swap Option and Command only for a matched device",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_gui",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475,
+                  "description": "Logitech K270 ID 1"
+                },
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50481,
+                  "description": "Logitech K270 ID 2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_gui"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475,
+                  "description": "Logitech K270 ID 1"
+                },
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50481,
+                  "description": "Logitech K270 ID 2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "application",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_alt"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475,
+                  "description": "Logitech K270 ID 1"
+                },
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50481,
+                  "description": "Logitech K270 ID 2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_alt",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_gui"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475,
+                  "description": "Logitech K270 ID 1"
+                },
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50481,
+                  "description": "Logitech K270 ID 2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
